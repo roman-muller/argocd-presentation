@@ -1,22 +1,44 @@
-# GitOps & Argo CD
+# Argo CD
+---
 
-## What is GitOps?
-- Git as single source of truth
-- Declarative infrastructure
-- Pull-based delivery
-- Constant reconciliation
+### 🧠 "X as Code" - Overview
+
+- **Infrastructure** → Terraform, Pulumi  
+- **Config** → Ansible, YAML  
+- **Network** → NetDevOps, Cisco NSO  
+- **Security** → Snyk, tfsec  
+- **Policy** → OPA, Kyverno  
+- **Deployment** → ArgoCD, GitHub Actions
+
+> 💡 All aspects of infrastructure and operations can now be versioned, tested, and automated — **as code**!
 
 ---
 
-## The Role of CD Operators
-- **Automate** deployments from Git
-- **Detect & fix drift** automatically
-- **Audit trails** & easy rollbacks
-- Secure & scalable delivery pipelines
+### 🚀 What is GitOps?
+🗂 Git as the single source of truth
+
+📜 Declarative infrastructure and configuration
+
+🔄 Pull-based delivery via automation agents
+
+🔁 Constant reconciliation to enforce desired state
 
 ---
 
-## Alternatives in GitOps CD
+### 🔄 Pull-Based Deployment with GitOps Agent
+📦 Agent runs inside Kubernetes, pulling config regularly
+
+📜 Git repo defines the desired state
+
+🔍 Agent compares desired vs. actual state continuously
+
+🛠 Automatically fixes drift to keep states in sync
+
+🎯 Always align actual state with desired state
+
+---
+
+### 🔀 Alternatives in GitOps CD
 
 | Tool    | UI     | Multi-tenancy | Health Checks |
 |---------|--------|----------------|----------------|
@@ -26,7 +48,7 @@
 
 ---
 
-## A Short History of Argo CD
+### 🚢 A Short History of Argo CD
 - Built by **Intuit** in 2018
 - Open sourced in late 2018
 - **CNCF graduated project** in 2020
@@ -34,11 +56,16 @@
 
 ---
 
-## Summary
+### 🚧 CD Workflow Without Argo CD
+⚙️ Manual setup: tools (kubectl), K8s & cloud access
 
-- **GitOps brings speed, reliability, compliance**
-- **Argo CD leads** with UI, RBAC, multi-cluster support
-- Solid toolchain for modern software delivery 🚀
+🔄 Deployments via scripts, no automation or visibility
+
+👁️ No centralized deployment status monitoring
+
+⚠️ High risk of drift, errors
+
+🛠 Troubleshooting and rollback are complex
 
 ---
 
