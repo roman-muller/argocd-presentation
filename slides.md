@@ -36,16 +36,6 @@
 
 ---
 
-### 🔀 Alternatives in GitOps CD
-
-| Tool    | UI     | Multi-tenancy | Health Checks |
-|---------|--------|----------------|----------------|
-| ArgoCD | ✅ Rich | ✅ Built-in    | ✅ Built-in    |
-| Flux    | ⚙️ CLI | ⚠️ Limited     | ❌ Plugins     |
-| Weave    | 🧩 Minimal | ⚠️ Basic       | 🔧 Plugins     |
-
----
-
 ### 🚢 A Short History of ArgoCD
 - Built by **Intuit** in 2018
 - Open sourced in late 2018
